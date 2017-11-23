@@ -1,0 +1,11 @@
+def ucgen?(a,b,c)
+    a+b > c && b+c > a && a+c > b
+end
+print "Üçgenin 1. kenarını giriniz = "
+a = gets.to_i
+print "Üçgenin 2. kenarını giriniz = "
+b = gets.to_i
+print "Üçgenin 3.kenarını giriniz = "
+c = gets.to_i
+
+puts "Verilen değerler" + " Üçgen" + (ucgen?(a,b,c)? "" : "değil ") + "dir."
