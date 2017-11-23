@@ -1,0 +1,12 @@
+while true
+    print "Parolanızı giriniz = "
+    parola = gets.chomp
+    print "Parolarınızı tekrar giriniz = "
+    tekrar = gets.chomp
+    if parola == tekrar
+        puts "Tebrikler Başarıyla Giriş Sağlandı !!"
+        break
+    else
+        puts "Parolanızı Tekrar Giriniz"
+    end
+end
