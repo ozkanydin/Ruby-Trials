@@ -1,0 +1,14 @@
+metin = "Sizin damda var beş boz başlı beş boz ördek, bizim damda var beş boz başlı
+beş boz ördek. Sizin damdaki beş boz başlı beş boz ördek; bizim damdaki
+beş boz başlı beş boz ördeğe: Siz de bizim gibi beş boz başlı beş boz
+ördeksiniz. demiş."
+
+frekans = {}
+
+metin.split.each do |kelime|
+    kelime.delete! ".,:;"
+    kelime.downcase!
+    frekans[kelime] = 0 unless frekans[kelime]
+    frekans[kelime] += 1
+end
+puts frekans
