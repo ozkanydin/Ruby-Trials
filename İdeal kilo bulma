@@ -1,0 +1,10 @@
+def robinson(boy,kadinmi)
+    if kadinmi
+        49+1.7*(boy-152.4)/2.54
+    else 
+        52+1.9*(boy-152.4)/2.54
+    end
+end
+
+
+puts "İdeal Kilonuz = ",robinson(170,false)
